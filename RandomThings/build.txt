@@ -1,0 +1,8 @@
+author = Dr. Frankenstein and RyeGaming
+version = 0.1
+displayName = Random Stuff
+hideCode = false
+hideResources = false
+includeSource = true
+buildIgnore = *.csproj, *.user, obj\*, bin\*, .vs\*
+includePDB = true

@@ -1,0 +1,115 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="14.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{94721796-B5A3-45D8-A013-1D166ECA4C09}</ProjectGuid>
+    <OutputType>Exe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>RandomThings</RootNamespace>
+    <AssemblyName>RandomThings</AssemblyName>
+    <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="build.txt" />
+    <Content Include="description.txt" />
+    <Content Include="Items\Ammo\BottomlessPartyBox.png" />
+    <Content Include="Items\Ammo\EndlessChlorophytePouch.png" />
+    <Content Include="Items\Ammo\EndlessCrystalPouch.png" />
+    <Content Include="Items\Ammo\EndlessCursedPouch.png" />
+    <Content Include="Items\Ammo\EndlessExplosiveBandolier.png" />
+    <Content Include="Items\Ammo\EndlessGoldBandolier.png" />
+    <Content Include="Items\Ammo\EndlessHVBandolier.png" />
+    <Content Include="Items\Ammo\EndlessIchorPouch.png" />
+    <Content Include="Items\Ammo\EndlessLuminitePouch.png" />
+    <Content Include="Items\Ammo\EndlessMeteorPouch.png" />
+    <Content Include="Items\Ammo\EndlessR1Crate.png" />
+    <Content Include="Items\Ammo\EndlessR2Crate.png" />
+    <Content Include="Items\Ammo\EndlessR3Crate.png" />
+    <Content Include="Items\Ammo\EndlessR4Crate.png" />
+    <Content Include="Items\Ammo\EndlessSilverPouch.png" />
+    <Content Include="Items\Ammo\ReplicatingNanoBullet.png" />
+    <Content Include="Items\Walls\DarkPlanks.png" />
+    <Content Include="Items\Walls\LightPlanks.png" />
+    <Content Include="Walls\DarkPlanks.png" />
+    <Content Include="Walls\LightPlanks.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Items\Ammo\BottomlessPartyBox.cs" />
+    <Compile Include="Items\Ammo\EndlessR4Crate.cs" />
+    <Compile Include="Items\Ammo\EndlessR3Crate.cs" />
+    <Compile Include="Items\Ammo\EndlessR2Crate.cs" />
+    <Compile Include="Items\Ammo\EndlessR1Crate.cs" />
+    <Compile Include="Items\Ammo\EndlessSilverPouch.cs" />
+    <Compile Include="Items\Ammo\ReplicatingNanoBullet.cs" />
+    <Compile Include="Items\Ammo\EndlessMeteorPouch.cs" />
+    <Compile Include="Items\Ammo\EndlessLuminitePouch.cs" />
+    <Compile Include="Items\Ammo\EndlessIchorPouch.cs" />
+    <Compile Include="Items\Ammo\EndlessHVBandolier.cs" />
+    <Compile Include="Items\Ammo\EndlessGoldBandolier.cs" />
+    <Compile Include="Items\Ammo\EndlessExplosiveBandolier.cs" />
+    <Compile Include="Items\Ammo\EndlessCursedPouch.cs" />
+    <Compile Include="Items\Ammo\EndlessCrystalPouch.cs" />
+    <Compile Include="Items\Ammo\EndlessChlorophytePouch.cs" />
+    <Compile Include="RandomThings.cs" />
+    <Compile Include="Items\Walls\LightPlanks.cs" />
+    <Compile Include="Items\Walls\DarkPlanks.cs" />
+    <Compile Include="Walls\LightPlanks.cs" />
+    <Compile Include="Walls\DarkPlanks.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.Xna.Framework, Version=4.0.0.0, Culture=neutral, PublicKeyToken=842cf8be1de50553, processorArchitecture=x86">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\Terraria Stuff\Programs\XNA Framework\Microsoft.Xna.Framework.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Xna.Framework.Game, Version=4.0.0.0, Culture=neutral, PublicKeyToken=842cf8be1de50553, processorArchitecture=x86">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\Terraria Stuff\Programs\XNA Framework\Microsoft.Xna.Framework.Game.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Xna.Framework.Graphics, Version=4.0.0.0, Culture=neutral, PublicKeyToken=842cf8be1de50553, processorArchitecture=x86">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\Terraria Stuff\Programs\XNA Framework\Microsoft.Xna.Framework.Graphics.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Xna.Framework.Xact, Version=4.0.0.0, Culture=neutral, PublicKeyToken=842cf8be1de50553, processorArchitecture=x86">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\Terraria Stuff\Programs\XNA Framework\Microsoft.Xna.Framework.Xact.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="Terraria">
+      <HintPath>..\..\..\..\..\..\..\..\Program Files (x86)\Steam\steamapps\common\Terraria\Terraria.exe</HintPath>
+    </Reference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

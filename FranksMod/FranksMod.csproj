@@ -1,0 +1,130 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="14.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{E20C3610-508E-47E9-9C0B-80CE03EA9550}</ProjectGuid>
+    <OutputType>Exe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>FranksMod</RootNamespace>
+    <AssemblyName>FranksMod</AssemblyName>
+    <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="FranksMod.cs" />
+    <Compile Include="Items\Placeable\Decor\ExoticDrink.cs" />
+    <Compile Include="Items\Placeable\Decor\SoftDrink.cs" />
+    <Compile Include="Items\Placeable\Decor\OrangeJuice.cs" />
+    <Compile Include="Items\Placeable\Doors\WoodScreenDoor.cs" />
+    <Compile Include="Items\Placeable\Doors\StorefrontDoor.cs" />
+    <Compile Include="Items\Placeable\Doors\StableDoor.cs" />
+    <Compile Include="Items\Placeable\Doors\PrisonDoor.cs" />
+    <Compile Include="Items\Placeable\Doors\OldWoodDoor.cs" />
+    <Compile Include="Items\Placeable\Doors\LightIronDoor.cs" />
+    <Compile Include="Items\Placeable\Doors\HeavyIronDoor.cs" />
+    <Compile Include="Items\Placeable\Doors\GlassDoor.cs" />
+    <Compile Include="Items\Placeable\Doors\BarredDoor.cs" />
+    <Compile Include="Items\Placeable\Furniture\BarTable.cs" />
+    <Compile Include="Items\Placeable\Furniture\LongTable.cs" />
+    <Compile Include="Items\Placeable\Furniture\UpholsteredChair.cs" />
+    <Compile Include="Items\Placeable\Furniture\TableCloth.cs" />
+    <Compile Include="Items\Placeable\Furniture\OldWoodTable.cs" />
+    <Compile Include="Items\Placeable\Furniture\LongTableCloth.cs" />
+    <Compile Include="Items\Placeable\Furniture\BarTableCloth.cs" />
+    <Compile Include="Items\Placeable\Furniture\StudentBookshelf.cs" />
+    <Compile Include="Items\Placeable\Furniture\OrnateBookcase.cs" />
+    <Compile Include="Items\Placeable\Furniture\PrisonBed.cs" />
+    <Compile Include="Items\Placeable\Furniture\HospitalBed.cs" />
+    <Compile Include="Items\Placeable\Furniture\ContainerBed.cs" />
+    <Compile Include="Items\Placeable\Furniture\BunkBed3.cs" />
+    <Compile Include="Items\Placeable\Furniture\BunkBed2.cs" />
+    <Compile Include="Items\Placeable\Furniture\BunkBed1.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="build.txt" />
+    <Content Include="description.txt" />
+    <Content Include="Items\Placeable\Doors\BarredDoor.png" />
+    <Content Include="Items\Placeable\Doors\GlassDoor.png" />
+    <Content Include="Items\Placeable\Doors\HeavyIronDoor.png" />
+    <Content Include="Items\Placeable\Doors\LightIronDoor.png" />
+    <Content Include="Items\Placeable\Doors\OldWoodDoor.png" />
+    <Content Include="Items\Placeable\Doors\PrisonDoor.png" />
+    <Content Include="Items\Placeable\Doors\StableDoor.png" />
+    <Content Include="Items\Placeable\Doors\StorefrontDoor.png" />
+    <Content Include="Items\Placeable\Doors\WoodScreenDoor.png" />
+    <Content Include="Items\Placeable\Furniture\BarTableCloth.png" />
+    <Content Include="Items\Placeable\Furniture\BarTable.png" />
+    <Content Include="Items\Placeable\Furniture\BunkBed1.png" />
+    <Content Include="Items\Placeable\Furniture\BunkBed2.png" />
+    <Content Include="Items\Placeable\Furniture\BunkBed3.png" />
+    <Content Include="Items\Placeable\Furniture\ContainerBed.png" />
+    <Content Include="Items\Placeable\Decor\ExoticDrink.png" />
+    <Content Include="Items\Placeable\Furniture\HospitalBed.png" />
+    <Content Include="Items\Placeable\Decor\OrangeJuice.png" />
+    <Content Include="Items\Placeable\Furniture\LongTableCloth.png" />
+    <Content Include="Items\Placeable\Furniture\LongTable.png" />
+    <Content Include="Items\Placeable\Furniture\OldWoodTable.png" />
+    <Content Include="Items\Placeable\Furniture\OrnateBookcase.png" />
+    <Content Include="Items\Placeable\Furniture\PrisonBed.png" />
+    <Content Include="Items\Placeable\Decor\SoftDrink.png" />
+    <Content Include="Items\Placeable\Furniture\StudentBookshelf.png" />
+    <Content Include="Items\Placeable\Furniture\TableCloth.png" />
+    <Content Include="Items\Placeable\Furniture\UpholsteredChair.png" />
+  </ItemGroup>
+  <ItemGroup />
+  <ItemGroup>
+    <Reference Include="Microsoft.Xna.Framework, Version=4.0.0.0, Culture=neutral, PublicKeyToken=842cf8be1de50553, processorArchitecture=x86">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\Terraria Stuff\Programs\XNA Framework\Microsoft.Xna.Framework.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Xna.Framework.Game, Version=4.0.0.0, Culture=neutral, PublicKeyToken=842cf8be1de50553, processorArchitecture=x86">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\Terraria Stuff\Programs\XNA Framework\Microsoft.Xna.Framework.Game.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Xna.Framework.Graphics, Version=4.0.0.0, Culture=neutral, PublicKeyToken=842cf8be1de50553, processorArchitecture=x86">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\Terraria Stuff\Programs\XNA Framework\Microsoft.Xna.Framework.Graphics.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Xna.Framework.Xact, Version=4.0.0.0, Culture=neutral, PublicKeyToken=842cf8be1de50553, processorArchitecture=x86">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\Terraria Stuff\Programs\XNA Framework\Microsoft.Xna.Framework.Xact.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="Terraria">
+      <HintPath>..\..\..\..\..\..\..\..\Program Files (x86)\Steam\steamapps\common\Terraria\Terraria.exe</HintPath>
+    </Reference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
