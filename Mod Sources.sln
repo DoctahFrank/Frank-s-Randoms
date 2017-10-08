@@ -1,13 +1,15 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 14
-VisualStudioVersion = 14.0.25123.0
+VisualStudioVersion = 14.0.25420.1
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FranksMod", "FranksMod\FranksMod.csproj", "{E20C3610-508E-47E9-9C0B-80CE03EA9550}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RandomThings", "RandomThings\RandomThings.csproj", "{94721796-B5A3-45D8-A013-1D166ECA4C09}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ExampleMod", "ExampleMod v0.8.1.1\ExampleMod.csproj", "{7773BDD8-037E-46DB-B842-B0EE41E74873}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FranksRandoms", "FranksRandoms\FranksRandoms.csproj", "{8298EAB6-0586-4BDA-9483-83624B66B13A}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -39,6 +41,14 @@ Global
 		{7773BDD8-037E-46DB-B842-B0EE41E74873}.Release|Any CPU.ActiveCfg = Release|x86
 		{7773BDD8-037E-46DB-B842-B0EE41E74873}.Release|x86.ActiveCfg = Release|x86
 		{7773BDD8-037E-46DB-B842-B0EE41E74873}.Release|x86.Build.0 = Release|x86
+		{8298EAB6-0586-4BDA-9483-83624B66B13A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8298EAB6-0586-4BDA-9483-83624B66B13A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8298EAB6-0586-4BDA-9483-83624B66B13A}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{8298EAB6-0586-4BDA-9483-83624B66B13A}.Debug|x86.Build.0 = Debug|Any CPU
+		{8298EAB6-0586-4BDA-9483-83624B66B13A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8298EAB6-0586-4BDA-9483-83624B66B13A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8298EAB6-0586-4BDA-9483-83624B66B13A}.Release|x86.ActiveCfg = Release|Any CPU
+		{8298EAB6-0586-4BDA-9483-83624B66B13A}.Release|x86.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
