@@ -1,3 +1,4 @@
+using Terraria;
 using Terraria.ID;
 using Terraria.ModLoader;
 
@@ -61,7 +62,7 @@ namespace FranksRandoms
             recipe.AddIngredient(ItemID.Starfish, 3);
             recipe.AddIngredient(ItemID.BossTrophyOgre);
             recipe.AddTile(TileID.MythrilAnvil);
-            recipe.SetResult(3835);
+            recipe.SetResult(ItemID.MonkStaffT1);
             recipe.AddRecipe();
 
             recipe = new ModRecipe(this);
@@ -69,11 +70,25 @@ namespace FranksRandoms
             recipe.AddIngredient(ItemID.FallenStar, 3);
             recipe.AddIngredient(ItemID.BossTrophyOgre);
             recipe.AddTile(TileID.MythrilAnvil);
-            recipe.SetResult(3836);
+            recipe.SetResult(ItemID.MonkStaffT2);
             recipe.AddRecipe();
 
             recipe = new ModRecipe(this);
-            recipe.AddRecipeGroup("", 10);
+            recipe.AddRecipeGroup("FranksRandoms:GoldBars", 10);
+            recipe.AddIngredient(ItemID.AncientCloth, 3);
+            recipe.AddTile(TileID.Anvils);
+            recipe.SetResult(ItemID.DjinnLamp);
+            recipe.AddRecipe();
+        }
+
+        public override void AddRecipeGroups()
+        {
+            RecipeGroup group = new RecipeGroup(() => Lang.misc[37] + " Gold Bar", new int[]
+            {
+                ItemID.GoldBar,
+                ItemID.PlatinumBar
+            });
+            RecipeGroup.RegisterGroup("FranksRandoms:GoldBars", group);
         }
     }
 }
