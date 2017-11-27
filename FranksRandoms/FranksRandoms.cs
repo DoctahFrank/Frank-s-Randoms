@@ -12,7 +12,8 @@ namespace FranksRandoms
 			{
 				Autoload = true,
 				AutoloadGores = true,
-				AutoloadSounds = true
+				AutoloadSounds = true,
+				AutoloadBackgrounds = true
 			};
 		}
 
@@ -79,6 +80,12 @@ namespace FranksRandoms
             recipe.AddTile(TileID.Anvils);
             recipe.SetResult(ItemID.DjinnLamp);
             recipe.AddRecipe();
+
+            /*recipe = new ModRecipe(this);
+            recipe.AddIngredient(null, "WoodSupport");
+            recipe.AddTile(TileID.Sawmill);
+            recipe.SetResult(ItemID.Wood);
+            recipe.AddRecipe();*/
         }
 
         public override void AddRecipeGroups()
